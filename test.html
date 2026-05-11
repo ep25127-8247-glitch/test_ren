@@ -1,0 +1,9 @@
+<h1 id="msg"></h1>
+
+<script>
+fetch("https://xxxxx.onrender.com/hello")
+.then(response => response.json())
+.then(data => {
+    document.getElementById("msg").textContent = data.message;
+});
+</script>
