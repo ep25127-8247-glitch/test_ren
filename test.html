@@ -1,7 +1,7 @@
 <h1 id="msg"></h1>
 
 <script>
-fetch("https://wordsniper-backend.onrender.com/")
+fetch("https://wordsniper-backend.onrender.com/hello")
 .then(response => response.json())
 .then(data => {
     document.getElementById("msg").textContent = data.message;
